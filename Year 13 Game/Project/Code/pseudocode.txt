@@ -1,0 +1,15 @@
+scoring function
+while loop throughout the game
+compare the scores of team a and b
+when score reaches 5
+both bases send data to master microbit which will persistently store data through radio connections (go over the works of the radio function in the microbit ref page)
+appear in all players microbits
+while game is true
+check score and when score == 5
+
+
+
+create map
+getX and getY as original and set as coordinate (0,4)
+if move in x axis by 10 meters, move x by one
+if move in y axis by 10 meters, move  y by one

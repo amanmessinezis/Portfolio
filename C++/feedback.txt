@@ -1,0 +1,85 @@
+
+* Test results
+robot.cpp: compiles
+game.cpp: compiles
+robot default constructor: pass
+robot.h included twice: pass
+robot.h without using namespace: pass
+robot.h has required includes: pass
+robot origin east(): pass
+robot origin north(): pass
+robot origin travelled(): pass
+robot move north(): pass
+robot move east(): pass
+robot move south(): pass
+robot move west(): pass
+robot move northeast north(): pass
+robot move northeast east(): pass
+robot move northeast travelled(): pass
+robot move northeast distance(): pass
+robot move backwards north(): pass
+robot move backwards east(): pass
+robot move backwards travelled(): pass
+robot move backwards distance(): pass
+robot independent state north(): pass
+robot independent state east(): pass
+robot independent state travelled(): pass
+game default constructor: pass
+game.h included twice: pass
+game.h without using namespace: pass
+game.h has required includes: pass
+game initial num_robots(): pass
+game move num_robots(): pass
+game move max_travelled(): pass
+game multi steps num_robots(): pass
+game multi steps num_within(): pass
+game multi steps max_travelled(): pass
+game multi steps robots_by_distance(): fail ( C B A)
+game backwards num_robots(): pass
+game backwards num_within(): pass
+game backwards max_travelled(): pass
+game backwards robots_by_distance(): fail ( C B A)
+game independent state: pass
+
+robot class:
+robot default constructor: 10/10
+This is correctly implemented.
+move functions, north() and east(): 15/15
+This is correctly implemented.
+The 0+ operations are unnecessary;
+travelled(): 8/8
+This is correctly implemented.
+distance(): 7/7
+This is correctly implemented.
+
+game class:
+game default constructor: 3/3
+This is correctly implemented, relying on default initialization
+to set up an empty map.
+num_robots() and move(): 7/7
+This is correctly implemented.
+You could just rely on the properties of [] to create a new
+robot if none exists at that name (see last part of Session 4
+and my solution).
+num_within(): 7/10
+This is correctly implemented.
+This would be better done with the count_if() library algorithm.
+max_travelled(): 7/7
+This is correctly implemented.
+robots_by_distance(): 7/13
+Robot names are listed in reverse name order, not distance
+order as required by the specification.
+The sort() library algorithm would be useful here.
+
+Style (scaled with the above marks): 12/20
+The classes are appropriately split between .h and .cpp files.
+Header guards are used appropriately.
+There are no superfluous data members.
+Data members should be private (see Session 6).
+It would be better style to use initializers in the robot constructor
+(see Session 6)
+const iterators are appropriately used where possible.
+There could have been a few more comments to explain the tricky bits.
+Variable names are generally helpful.
+
+Total mark: 83/100

@@ -1,0 +1,30 @@
+-- Q1. [50 marks] LP23s
+
+tokens {
+    SKIP: "((//.*(\r?\n))|\s)+" -- DO NOT MODIFY (simple comments and whitespace)
+    LBR: "\("
+    RBR: "\)"
+    LCBR: "\{"
+    RCBR: "\}"
+    MAIN: "main"
+    MUL: "\*"
+    SUB: "-"
+    ADD: "\+"
+    INTEGER: "[0-9]+"
+}
+
+Prog -> MAIN LCBR RCBR -- to be completed
+
+Exp -> SimpleExp OperatorClause
+
+OperatorClause -> Operator SimpleExp
+OperatorClause ->
+
+SimpleExp -> INTEGER
+SimpleExp -> LBR Exp RBR
+-- to be completed
+
+Operator -> MUL
+Operator -> SUB
+Operator -> ADD
+-- to be completed
