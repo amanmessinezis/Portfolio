@@ -23,7 +23,6 @@ Here, you'll find **highlight projects** that I've developed from **Year 13 to m
 - Java ☕  
 - SQL (DDL/DML/DCL) 📊  
 - HTML, JavaScript, CSS 🌐  
-- To the ones I’ve forgotten, I love you and I’m sorry 😢❤️  
 
 ### **Frameworks & Tools**  
 - Flask 🏗️  
