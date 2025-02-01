@@ -1,0 +1,3 @@
+INSERT INTO Users(Username, "First Name", "Last Name", "Email Address", Password, "Account Type") VALUES ('Aman', 'Aman', 'Messinezis', 'amanmessinezis@capacitas.co.uk', 'SunnyDays', 'Consultant');
+INSERT INTO Queries("Query ID", Username, Clients, "Date From", "Date To", "Query Name", "Alert ID") VALUES (1, 'Aman', 'Deloitte', 20200501, 20200601, 'DeloitteMayJune2020', null);
+INSERT INTO Alerts("Alert ID", Username, Recurrence, Skip, "End Date", "Next Email", "Alert Name") VALUES (1, 'Aman', 'Month', 0, 20230101, 20220508, 'MyMonthlyAlert');

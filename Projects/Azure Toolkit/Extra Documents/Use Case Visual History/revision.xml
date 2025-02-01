@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project branchName="trunk" branchType="-1" description="&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;style type=&quot;text/css&quot;&gt;&#10;      &lt;!--&#10;        body { color: #000000; font-family: Dialog; font-size: 12px }&#10;      --&gt;&#10;    &lt;/style&gt;&#13;&#10;    &#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;" name="Azure Toolkit">
+	<Revision comment="" datetime="1644025321000" revision="1" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="" datetime="1644025346000" revision="2" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="" datetime="1644173873000" revision="3" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Added use cases for the connection of the external systems (Azure Servers and SQLite Database &#10;as well as adding inclusion dependencies for the use cases that require the connection of these external systems" datetime="1644240914000" revision="4" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Removed extend use cases as I realised they were being used incorrectly. Looking great so far. Created a use case spec for the Login use case, with a alternative flows on a word file. I'll try find a way to import it over. " datetime="1644282475000" revision="5" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Had to add new use cases and reorganise my use cases which was a very fiddly task. &#10;Created use case spec for the &quot;Create account&quot; use case.&#10;Next step is to package up use cases accordingly to get into the highest band. " datetime="1644369258000" revision="6" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="just added a usc for the create query use case" datetime="1644461537000" revision="7" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="just ucs for the save query w/ alt flows in my project file :)" datetime="1644539219000" revision="8" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="started to work on my open query ucs" datetime="1644570033000" revision="9" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="usc for remove and chang ucs" datetime="1644623959000" revision="10" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Updated the Create Query ucs. Probably need to fix the alt flow. &#10;Run query ucs completed. Need to start on alt flow.&#10;Create an all queries use case&#10;Change query didn't have an inclusion dependency to the queries it should've, so i did that" datetime="1644679596000" revision="11" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="UCS for setup alert. alt flow needed to be done next!" datetime="1644720670000" revision="12" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="ucs on remove alert and started on view vis. added a use case to get all alerts, as well as the necessary connections to it.  i also worked on the change alert use case and made edits to the saving queries and alerts use case by adding a while loop." datetime="1644784083000" revision="13" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Completed most of the inclusion use case specs which is great news." datetime="1644859584000" revision="14" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Removed a fair chunk of use cases, because they didn't fit within the system, and so did their actors, which saved me a ton of time. &#10;I've been able to complete all use case specifications, which is great!" datetime="1644967646000" revision="15" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="nothing lol" datetime="1645061047000" revision="16" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Packaged up the use cases. Had to tweak the locations of the use cases though, to neaten everything up" datetime="1645132491000" revision="17" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Packaged and reorganised the use cases a little bit to make it tidier" datetime="1645132548000" revision="18" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Did some stuff! Realised that I needed an administrator as an actor to remove accounts, so I put that in the use case diagram. &#10;Only now clocking that I have to do yet ANOTHER main flow but it should be fine lol.&#10;Jot down some initial ideas for classes and their attributes and methods on my notepad. &#10;Created a few CRC cards." datetime="1645286476000" revision="19" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Made CRC cards for the three main classes I think are needed. Might need to add more&#10;I created a use caseto open and save alerts because I forgot, as well as creating the necessary flows. Need to check tomorrow if I need to create alt flows too." datetime="1645299315000" revision="20" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Rough view of my ACD. Dk if i need to add a lot more or not so ima ask my professor in his office hours. &#10;worked on the flow for deleting an account" datetime="1645377636000" revision="21" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="added directions and names to associations&#10;added include dependencies from create account bc i forgot to before&#10;added a use case for logging out. will create a main flow soon&#10;added responsibilities to run alerts and queries" datetime="1645452647000" revision="22" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="added main flow for log out use case. forgot to mention in previous commitment that i also ranked the use cases in terms of priority. &#10;made a start to it on vp, but thought it'd be better to put it on a spreadsheet, as well as clickup, so i can set deadlines for myself" datetime="1645452975000" revision="23" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="changed from design class to analysis class" datetime="1646063442000" revision="24" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="removed solution domain classes so i can add them to the design class" datetime="1646169628000" revision="25" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="start of design diagram. boundary, entity, control..&#10;constructors&#10;arrows for associations" datetime="1646266078000" revision="26" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="added boundary, entity and control classes&#10;finished indexing for analysis" datetime="1646353822000" revision="27" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="prioritising use cases with justifications to improve productivity" datetime="1646651196000" revision="28" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="set priority levels for all use cases" datetime="1646663206000" revision="29" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="LITTLE MORE WORK TO DO WITH USE CASE INDEX" datetime="1646685306000" revision="30" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="test" datetime="1646865059000" revision="31" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="test" datetime="1646870328000" revision="32" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="start on control classes&#10;" datetime="1646875563000" revision="33" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="associations, navigation and visibility! :D" datetime="1646954422000" revision="34" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="Revert revision 34" datetime="1646955707000" revision="35" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="up to date" datetime="1646955783000" revision="36" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="constructors for an easier implementation on python&#10;visibility and navigation between classes to establish logical connections between classes&#10;elaborating on methods and attributes" datetime="1647035744000" revision="37" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="added an alert handler control class" datetime="1647036770000" revision="38" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="navigation for alert handler" datetime="1647102044000" revision="39" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="few methods for control classes. couple constructors with attributes. more attributes for alert and query handlers. next: figure out what to do with recurrence of alerts" datetime="1647196379000" revision="40" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="got a recurring alerts option setup.&#10;added a few more constructors&#10;getters and setters to enable editing" datetime="1647374835000" revision="41" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="accounthandler associations to db and user. forgot password use case, with necessary desc and associations. made a generalisation for admin and pm called &quot;user&quot; w necessary associations" datetime="1647558298000" revision="42" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="not sure haha" datetime="1647568559000" revision="43" user="aman.messinezis@city.ac.uk"/>
+	<Revision comment="back to normal" datetime="1647568608000" revision="44" user="aman.messinezis@city.ac.uk"/>
+</Project>

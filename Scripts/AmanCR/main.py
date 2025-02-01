@@ -17,8 +17,8 @@ owner = "Aman"
 # Email Credentials
 email = 'coffeeroulette.capacitas@gmail.com'
 app_password = 'vpnu luav gask rkvr'
-# password = 'P@55word!'
-CEO = 'sameenahassam@capacitas.co.uk'
+# password = ''
+CEO = ''
 database = 'CoffeeRoulette.db'
 # database = 'CoffeeRouletteTest - Copy.db'
 
