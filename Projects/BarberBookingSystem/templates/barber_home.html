@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Welcome message for the barber -->
+    <h1>Welcome, {{ current_user.first_name }}</h1>
+
+    <!-- Barbershop details section -->
+    {% if barbershop %}
+        <h2>Your Barbershop</h2>
+        <p>Name: {{ barbershop.name }}</p>
+        <p>Address: {{ barbershop.address }}</p>
+        <p>Phone: {{ barbershop.phone_number }}</p>
+        <!-- Options to update or delete the barbershop if barber is the creator -->
+        {% if barbershop.creator_id == current_user.id %}
+            <form action="{{ url_for('update_barbershop', shop_id=barbershop.shop_id) }}" method="GET">
+                <button type="submit">Update Barbershop</button>
+            </form>
+            <form action="{{ url_for('delete_barbershop', shop_id=barbershop.shop_id) }}" method="POST">
+                <button type="submit">Delete Barbershop</button>
+            </form>
+            <!-- Option to leave the barbershop if barber is not the creator -->
+        {% else %}
+            <form action="{{ url_for('leave_barbershop', shop_id=barbershop.shop_id) }}" method="POST">
+                <button type="submit">Leave Barbershop</button>
+            </form>
+        {% endif %}
+        <!-- Message if the barber is not associated with any barbershop -->
+    {% else %}
+        <h2>You are not associated with any Barbershop</h2>
+        <!-- Option to create a new barbershop if barber has not created one -->
+        {% if not current_user.shop_id %}
+            <h2>Create a New Barbershop</h2>
+            <form action="{{ url_for('new_barbershop') }}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" id="phone_number" name="phone_number" required><br><br>
+
+                <button type="submit">Create</button>
+            </form>
+        {% endif %}
+    {% endif %}
+
+    <!-- Section to manage appointments -->
+    <h2>Manage Your Appointments</h2>
+    <div>
+        <a href="{{ url_for('calendar') }}">
+            <button>Go to Calendar</button>
+        </a>
+        <br>
+        <a href="{{ url_for('add_availability') }}">
+            <button>Add Availability</button>
+        </a>
+    </div>
+
+    <!-- Section to manage services -->
+    <h2>Your Services</h2>
+    <a href="{{ url_for('add_service') }}">
+        <button>Add Service</button>
+    </a>
+    <ul>
+        {% for service in services %}
+            <li class="service-item">
+                <span>{{ service.name }}</span>
+                <a href="{{ url_for('update_service', service_id=service.id) }}">
+                    <button>Update</button>
+                </a>
+                <form action="{{ url_for('delete_service', service_id=service.id) }}" method="POST"
+                      style="display: inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Section to manage availabilities -->
+    <h2>Your Availabilities</h2>
+    <ul>
+        {% for availability in availabilities %}
+            <li class="availability-item">
+                <span>{{ availability.date }} from {{ availability.start_time.strftime('%H:%M') }} to
+                    {{ availability.end_time.strftime('%H:%M') }}</span>
+                <a href="{{ url_for('update_availability', availability_id=availability.id) }}">
+                    <button>Update</button>
+                </a>
+                <form action="{{ url_for('delete_availability', availability_id=availability.id) }}" method="POST"
+                      style="display: inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Section to search for barbershops to join if barber has not created one -->
+    {% if not current_user.shop_id %}
+        <h2>Search for a Barbershop</h2>
+        <form action="{{ url_for('search_barbershop') }}" method="GET">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" required><br><br>
+            <button type="submit">Search</button>
+        </form>
+    {% endif %}
+
+    <!-- Display search results for barbershops -->
+    {% if barbershops %}
+        <h2>Search Results</h2>
+        <ul>
+            {% for shop in barbershops %}
+                <li>
+                    <p>Name: {{ shop.name }}</p>
+                    <p>Address: {{ shop.address }}</p>
+                    <p>Phone: {{ shop.phone_number }}</p>
+                    <form action="{{ url_for('join_barbershop', shop_id=shop.shop_id) }}" method="POST">
+                        <button type="submit">Join Barbershop</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
