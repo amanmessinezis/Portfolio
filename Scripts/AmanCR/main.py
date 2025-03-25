@@ -1,6 +1,6 @@
 # Will not be paired with manager
 # Can only work if the manager column is updated in the database
-# Someone paired with someone one month will not be paired with someone at least for the next 6 months
+# NEW FEATURE: If two people have been paired in a given month, they will not be paired again for at least the next six months
 import math
 import random
 import smtplib
