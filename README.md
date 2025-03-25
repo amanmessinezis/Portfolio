@@ -6,7 +6,7 @@ Welcome to my GitHub portfolio! 😁
 
 I'm a **Computer Science graduate** with **3 years of industry experience** in **Software Engineering, Consulting, Data Analytics, and Cloud Technology**. My passion lies in identifying inefficiencies and using my technical expertise to improve processes, delivering greater value to my team. I constantly seek to innovate and refine the way I work!  
 
-Here, you'll find **highlight projects** that I've developed from **Year 13 to my final year at university**, covering both **academic projects** and **real-world industry experience**. You’ll also come across **coding challenges** and **projects from certifications** I’ve completed (currently one, but more to come!).  
+Here, you'll find **highlight projects** that I've developed from **Year 13 to my final year at university**, covering both **academic projects** and **real-world industry experience**. You’ll also come across some **coding challenges** I’ve completed.  
 
 ## 🔥 Key Projects  
 
