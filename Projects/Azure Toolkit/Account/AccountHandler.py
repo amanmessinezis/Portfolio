@@ -38,15 +38,15 @@ def correctAccountDetails(username, inputted_password: str):
 
 # Checks if email address is valid
 def validateEmailAddress(emailAddress):
-    api_key = "ad9c409d-63f9-42e6-a55b-af76e365fcd5"
+    api_key = "ff2d9295f92b4c139d63ab58ab4b2c63"
     response = requests.get(
-        "https://isitarealemail.com/api/email/validate",
-        params={'email': emailAddress},
-        headers={'Authorization': "Bearer " + api_key})
-    status = response.json()['status']
-    if status == "valid":
+        "https://emailvalidation.abstractapi.com/v1/",
+        params={'email': emailAddress,
+                'api_key': api_key})
+    status = response.json()
+    if status.get("deliverability") == "DELIVERABLE":
         return True
-    elif status == "invalid":
+    elif status.get("deliverability") == "UNDELIVERABLE":
         return False
     else:
         return "Unresponsive"
