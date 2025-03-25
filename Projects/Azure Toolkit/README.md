@@ -56,5 +56,5 @@ The following documents provide further technical and user detail:
 ## 👤 Author
 **Aman Messinezis**  
 BSc Computer Science (Professional Pathway)  
-Work-Based Learning Project at **Capacitas**
+Side Of Work Project at **Capacitas**
 
