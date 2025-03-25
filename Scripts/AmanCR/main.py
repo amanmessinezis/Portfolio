@@ -15,8 +15,8 @@ from dateutil.relativedelta import relativedelta
 # Who's running it
 owner = "Aman"
 # Email Credentials
-email = 'coffeeroulette.capacitas@gmail.com'
-app_password = 'vpnu luav gask rkvr'
+email = ''
+app_password = ''
 # password = ''
 CEO = ''
 database = 'CoffeeRoulette.db'

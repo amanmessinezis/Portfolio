@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="CoffeeRoulette" uuid="5b690a68-98e7-4fc2-becb-a58f7176e263">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>93057c16-0816-4d42-a2f5-e6db402146e4</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\AmanMessinezis\OneDrive - Capacitas\Documents\AmanCR\CoffeeRoulette.db</jdbc-url>
@@ -14,7 +14,7 @@
       </libraries>
     </data-source>
     <data-source source="LOCAL" name="CoffeeRouletteTest - Copy" uuid="2e36b9ad-0fca-474d-ad4b-e2718862a2a9">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>93057c16-0816-4d42-a2f5-e6db402146e4</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\AmanMessinezis\OneDrive - Capacitas\Documents\AmanCR\CoffeeRouletteTest - Copy.db</jdbc-url>

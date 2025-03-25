@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (AmanCR)" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="sdkName" value="Python 3.12 virtualenv at C:\GitHub\Portfolio\Projects\BarberBookingSystem\.venv" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (AmanCR)" project-jdk-type="Python SDK" />
 </project>
