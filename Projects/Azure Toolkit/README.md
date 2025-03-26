@@ -38,7 +38,7 @@ A command-line Python application developed during my work-based learning at Cap
 - **PyInstaller**
 
 ## 📦 Installation & Setup
-> The app is precompiled and runs via `main.exe`. Source code available upon request (proprietary elements omitted for GitHub release).
+> The app is precompiled and runs via `main.exe`.
 
 ## 📄 Documentation
 The following documents provide further technical and user detail:
